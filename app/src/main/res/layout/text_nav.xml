@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ly_tab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m49"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ly_tab_menu_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="@dimen/m2">
+                <TextView
+                    android:id="@+id/tv_tab_menu_home"
+                    style="@style/tab_menu_text"
+                    android:drawableTop="@drawable/tab_menu_channel"
+                    android:text="首页"
+                    android:textColor="@drawable/tab_menu_text"/>
+
+                <TextView
+                    android:id="@+id/tab_menu_channel_num"
+                    style="@style/tab_menu_bgnum"
+                    android:layout_toRightOf="@+id/tv_tab_menu_homne"
+                    android:text="99+"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_tab_menu_publish"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="@dimen/m3">
+                <TextView
+                    android:text="发布"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:id="@+id/tab_menu_jia"
+                    android:layout_height="@dimen/m40"
+                    android:layout_width="match_parent" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_tab_menu_mine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="@dimen/m2">
+
+                <TextView
+                    android:id="@+id/tv_tab_menu_mine"
+                    style="@style/tab_menu_text"
+                    android:drawableTop="@drawable/tab_menu_channel"
+                    android:text="我的"
+                    android:textColor="@drawable/tab_menu_text"/>
+
+                <TextView
+                    android:id="@+id/tab_mine_channel_num"
+                    style="@style/tab_menu_bgnum"
+                    android:layout_toRightOf="@+id/tv_tab_menu_mine"
+                    android:text="99+"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_above="@id/ly_tab_menu"
+        android:background="@color/div_white" />
+
+
+
+
+
+</RelativeLayout>

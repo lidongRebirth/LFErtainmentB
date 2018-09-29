@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/rel_integral"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/m60"
+            android:layout_marginTop="@dimen/m9"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/m15"
+            android:paddingRight="@dimen/m15">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@mipmap/youjiantou"
+                android:drawablePadding="@dimen/m8"
+                android:text="认证人姓名"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_head_title" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/m100"
+                android:background="@null"
+                android:hint="请正确填写真实姓名"
+                android:textSize="@dimen/text_head_title" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/m1"
+                android:layout_alignParentBottom="true"
+                android:background="@color/bg_line" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/m60"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/m15"
+            android:paddingRight="@dimen/m15">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@mipmap/youjiantou"
+                android:drawablePadding="@dimen/m8"
+                android:text="身份证号"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_head_title" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/m100"
+                android:background="@null"
+                android:hint="请输入身份证号"
+                android:textSize="@dimen/text_head_title"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/m15"
+            android:paddingRight="@dimen/m15"
+            android:layout_marginTop="@dimen/m10">
+            <TextView
+                android:id="@+id/tv_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/youjiantou"
+                android:drawablePadding="@dimen/m8"
+                android:text="上传身份证照片"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_head_title" />
+            <LinearLayout
+                android:id="@+id/ll_image"
+                android:layout_width="@dimen/m200"
+                android:layout_height="@dimen/m100"
+                android:layout_below="@id/tv_text"
+                android:layout_centerHorizontal="true"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/m20">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/m20"
+                    android:src="@mipmap/jia"/>
+                <TextView
+                    android:layout_marginTop="@dimen/m10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:text="上传图片" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/iv_pic"
+                android:layout_width="@dimen/m200"
+                android:layout_height="@dimen/m100"
+                android:layout_below="@id/tv_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/m20"
+                android:visibility="gone"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/m150">
+                <TextView
+                    android:text="上传说明:"
+                    android:textColor="@color/text_main"
+                    android:textSize="@dimen/text_head_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="1、身份证正面照片"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_hint"
+                    android:textColor="@color/text_assist"
+                    android:layout_marginTop="@dimen/m5"/>
+                <TextView
+                    android:text="2、格式要求：支持jpg、jpeg、bmp、png格式，大小不超过1M"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_hint"
+                    android:textColor="@color/text_assist"
+                    android:layout_marginTop="@dimen/m5"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+        <Button
+            android:id="@+id/btn_up"
+            android:text="上传"
+            android:layout_marginLeft="@dimen/m50"
+            android:layout_marginRight="@dimen/m50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/m10"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/m1"
+            android:background="@color/bg_line"
+            android:layout_marginLeft="@dimen/m15"
+            android:layout_marginRight="@dimen/m15"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_setting"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rel_suggest"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/m60"
+                android:layout_marginTop="@dimen/m9"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/m15"
+                android:paddingRight="@dimen/m15">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/m8"
+                    android:drawableRight="@mipmap/youjiantou"
+                    android:text="意见反馈"
+                    android:textColor="@color/text_black"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/m1"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/bg_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_nav"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/m60"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/m15"
+                android:paddingRight="@dimen/m15">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/m8"
+                    android:drawableRight="@mipmap/youjiantou"
+                    android:text="新手导航"
+                    android:textColor="@color/text_black"
+                    android:textSize="16sp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/m1"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/bg_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_wallet"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/m15"
+                android:paddingRight="@dimen/m15">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/m8"
+                    android:drawableRight="@mipmap/youjiantou"
+                    android:text="钱包收入"
+                    android:textColor="@color/text_black"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_newversion"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/m60"
+                android:layout_marginTop="@dimen/m9"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/m15"
+                android:paddingRight="@dimen/m15">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/m8"
+                    android:drawableRight="@mipmap/youjiantou"
+                    android:text="检测新版本"
+                    android:textColor="@color/text_black"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_aboutours"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/m60"
+                android:layout_marginTop="@dimen/m9"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/m15"
+                android:paddingRight="@dimen/m15">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/m8"
+                    android:drawableRight="@mipmap/youjiantou"
+                    android:text="关于我们"
+                    android:textColor="@color/text_black"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_quit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/m60"
+                android:layout_marginTop="@dimen/m9"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/m15"
+                android:paddingRight="@dimen/m15">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="退出登录"
+                    android:textColor="@color/text_black"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

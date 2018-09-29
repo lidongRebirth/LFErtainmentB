@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 空心圆角矩形 兴趣标签使用-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="50dp" />
+    <gradient
+        android:endColor="#EB631F"
+        android:startColor="#EB631F" />
+</shape>

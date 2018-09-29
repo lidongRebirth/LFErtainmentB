@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zlz.app.lfertainmentb.activitys.register.RegisterActivity">
+
+    <include layout="@layout/common_title" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/m10"
+        android:layout_marginTop="@dimen/m20"
+        android:text="高效创建属于您自己的活动" />
+
+    <EditText
+        android:id="@+id/et_tel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/register_edit_hight"
+        android:layout_marginLeft="@dimen/register_laymargin"
+        android:layout_marginRight="@dimen/register_laymargin"
+        android:background="@null"
+        android:hint="请输入您的手机号"
+        android:textSize="@dimen/register_hinttext"
+        android:inputType="phone"
+        android:maxLines="1"
+        android:maxLength="11"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m1"
+        android:layout_marginLeft="@dimen/register_laymargin"
+        android:layout_marginRight="@dimen/register_laymargin"
+        android:background="@color/black" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/register_edit_hight"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/register_laymargin"
+            android:layout_marginRight="@dimen/register_laymargin"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="短信验证码"
+            android:textSize="@dimen/register_hinttext"
+            android:inputType="number"
+            android:maxLines="1"
+            android:maxLength="8"/>
+
+        <Button
+            android:id="@+id/btn_code"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/m25"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/m20"
+            android:background="@drawable/coffee_circular_fill"
+            android:text="发送验证码"
+            android:singleLine="true"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m1"
+        android:layout_marginLeft="@dimen/register_laymargin"
+        android:layout_marginRight="@dimen/register_laymargin"
+        android:background="@color/black" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/register_edit_hight"
+        android:layout_marginLeft="@dimen/register_laymargin"
+        android:layout_marginRight="@dimen/register_laymargin"
+        android:background="@null"
+        android:hint="请输入您的密码"
+        android:textSize="@dimen/register_hinttext"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:singleLine="true"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m1"
+        android:layout_marginLeft="@dimen/register_laymargin"
+        android:layout_marginRight="@dimen/register_laymargin"
+        android:background="@color/black" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/register_edit_hight"
+        android:layout_marginLeft="@dimen/register_laymargin"
+        android:layout_marginRight="@dimen/register_laymargin"
+        android:background="@null"
+        android:hint="设置邮箱"
+        android:textSize="@dimen/register_hinttext"
+        android:singleLine="true"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m1"
+        android:layout_marginLeft="@dimen/register_laymargin"
+        android:layout_marginRight="@dimen/register_laymargin"
+        android:background="@color/black" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/register_edit_hight"
+        android:layout_marginLeft="@dimen/register_laymargin"
+        android:layout_marginRight="@dimen/register_laymargin"
+        android:background="@null"
+        android:hint="请输入您的姓名（用于活动报名）"
+        android:textSize="@dimen/register_hinttext"
+        android:minEms="2"
+        android:singleLine="true"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m1"
+        android:layout_marginLeft="@dimen/register_laymargin"
+        android:layout_marginRight="@dimen/register_laymargin"
+        android:background="@color/black" />
+
+    <EditText
+        android:id="@+id/et_sponsor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/register_edit_hight"
+        android:layout_marginLeft="@dimen/register_laymargin"
+        android:layout_marginRight="@dimen/register_laymargin"
+        android:background="@null"
+        android:hint="主办方名称"
+        android:textSize="@dimen/register_hinttext"
+        android:singleLine="true"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m1"
+        android:layout_marginLeft="@dimen/register_laymargin"
+        android:layout_marginRight="@dimen/register_laymargin"
+        android:background="@color/black" />
+
+    <Button
+        android:id="@+id/btn_agree"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/register_edit_hight"
+        android:layout_marginTop="@dimen/m10"
+        android:text="同意协议并注册" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="我已阅读并同意《用户注册手册》" />
+
+
+</LinearLayout>

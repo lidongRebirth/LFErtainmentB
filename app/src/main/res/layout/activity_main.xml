@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_go"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="进入下一个活动" />
+
+            <TextView
+                android:id="@+id/tv_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="获取头像" />
+
+            <com.zlz.app.lfertainmentb.views.roundimageview.RoundedImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <Button
+                android:id="@+id/btn_to_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="进入登录界面" />
+
+            <Button
+                android:id="@+id/btn_to_set"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="进入设置界面" />
+
+            <Button
+                android:id="@+id/btn_to_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="进入主页" />
+
+            <Button
+                android:id="@+id/btn_to_person"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="个人认证" />
+
+            <Button
+                android:id="@+id/btn_to_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="企业认证" />
+
+            <Button
+                android:id="@+id/btn_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="下拉刷新上拉加载" />
+
+            <Button
+                android:id="@+id/btn_to_lab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="标签" />
+            <Button
+                android:id="@+id/btn_to_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="修改密码" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

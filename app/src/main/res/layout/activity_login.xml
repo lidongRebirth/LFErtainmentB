@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zlz.app.lfertainmentb.views.roundimageview.RoundedImageView
+        android:id="@+id/iv_appicon"
+        android:layout_width="@dimen/m73"
+        android:layout_height="@dimen/m73"
+        android:layout_marginTop="@dimen/m50"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/m5"
+        android:text="找乐子管家"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_appicon" />
+    <RelativeLayout
+        android:id="@+id/rl_tel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m46"
+        android:layout_marginLeft="@dimen/m47"
+        android:layout_marginRight="@dimen/m47"
+        android:layout_marginTop="@dimen/m50"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_appicon">
+
+        <ImageView
+            android:id="@+id/iv_person"
+            android:layout_width="@dimen/m19"
+            android:layout_height="@dimen/m19"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_launcher" />
+
+        <EditText
+            android:id="@+id/et_tel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/m5"
+            android:layout_toRightOf="@id/iv_person"
+            android:background="@null"
+            android:hint="请输入手机号"
+            android:textSize="@dimen/m15"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:maxLength="11" />
+
+        <ImageView
+            android:id="@+id/iv_clear_tel"
+            android:layout_width="@dimen/m35"
+            android:layout_height="@dimen/m35"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/m10"
+            android:paddingTop="@dimen/m10"
+            android:src="@mipmap/pic_clear"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/m1"
+            android:layout_alignParentBottom="true"
+            android:background="#333333" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m46"
+        android:layout_marginLeft="@dimen/m47"
+        android:layout_marginRight="@dimen/m47"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rl_tel">
+
+        <ImageView
+            android:id="@+id/iv_password"
+            android:layout_width="@dimen/m19"
+            android:layout_height="@dimen/m19"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_launcher" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/m5"
+            android:layout_toRightOf="@id/iv_password"
+            android:background="@null"
+            android:hint="请输入密码"
+            android:textSize="@dimen/m15"
+            android:inputType="textPassword"
+            android:maxLines="1"/>
+
+        <ImageView
+            android:id="@+id/iv_clear_password"
+            android:layout_width="@dimen/m35"
+            android:layout_height="@dimen/m35"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/m10"
+            android:paddingTop="@dimen/m10"
+            android:src="@mipmap/pic_clear"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/m1"
+            android:layout_alignParentBottom="true"
+            android:background="#333333" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/m47"
+        android:layout_marginRight="@dimen/m47"
+        android:layout_marginTop="@dimen/m10"
+        android:text="登录"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rl_password" />
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/m47"
+        android:text="注册账号"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_login" />
+    <TextView
+        android:id="@+id/tv_forget_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/m47"
+        android:text="忘记密码"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_login" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/ll_thirdlogin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="@dimen/m10"
+        android:layout_marginLeft="@dimen/m47"
+        android:layout_marginRight="@dimen/m47"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/m13"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_gravity="center_vertical"
+            android:background="#333333" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/m6"
+            android:layout_marginRight="@dimen/m6"
+            android:text="第三方登录"
+            android:textColor="#333333"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_gravity="center_vertical"
+            android:background="#333333" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_thirdlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/m47"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageButton
+            android:id="@+id/ib_weixin"
+            android:layout_width="@dimen/m60"
+            android:layout_height="@dimen/m60"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@mipmap/ic_launcher" />
+
+        <ImageButton
+            android:id="@+id/ib_qq"
+            android:layout_width="@dimen/m60"
+            android:layout_height="@dimen/m60"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@mipmap/ic_launcher" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

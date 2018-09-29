@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff895d</color>
+    <color name="colorPrimaryDark">#ff895d</color>
+    <color name="colorAccent">#ff895d</color>
+    <!--基本色-->
+    <color name="white">#ffffff</color>
+    <color name="black">#333333</color>
+    <color name="orange">#e67540</color>
+
+
+
+    <!--背景色-->
+    <color name="bg_setting">#f5f5f5</color>
+    <!--背景底色-->
+    <color name="bg_bottom">#f5f5f5</color>
+    <!--按钮不可点击-->
+    <color name="bg_button_no">#d9d9d9</color>
+
+
+
+    <!--字体色-->
+    <color name="text_black">#333333</color>
+    <color name="text_white">#FFFFFF</color>
+    <!--标题文字主要提示文字-->
+    <color name="text_main">#333333</color>
+    <!--用于标题重要的操作按钮-->
+    <color name="text_title_btn">#666666</color>
+    <!--辅助说明提示文字-->
+    <color name="text_assist">#999999</color>
+    <!--用于提示文字：例如登录-->
+    <color name="text_hint">#d0d0d0</color>
+
+    
+    
+    
+
+    <!--导航栏相关-->
+    <color name="tab_unselect">#c9c9c9</color>
+
+
+
+    <!--线-->
+    <!--分割线、标签描边-->
+    <color name="div_line">#dfdfdf</color>
+
+    <color name="bg_line">#dcdcdc</color>
+    <color name="div_white">#E5E5E5</color>
+
+
+</resources>
